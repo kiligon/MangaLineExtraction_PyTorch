@@ -1,5 +1,5 @@
 import torch.nn as nn
-from building_blocks import ConvolutionBlock, ResidualBlock, UpsamplingResidualBlock, ResidualShortcut
+from src.building_blocks import ConvolutionBlock, ResidualBlock, UpsamplingResidualBlock, ResidualShortcut
 
 
 class MangaLineExtractor(nn.Module):
