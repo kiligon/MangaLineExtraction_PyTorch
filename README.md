@@ -8,14 +8,6 @@ Besides colab, There is also a gradio-like [web demo](https://moeka.me/mangaLine
 ![teaser](./assets/teaser.png)
 
 
-### Usage 
-
-    model_torch.py [source folder] [output folder]
-
-Example:
-
-    model_torch.py ./pytorchTestCases/ ./pytorchResults/
-    
 ### The model weights (erika.pth)
 
 Please refer to the **[release](https://github.com/ljsabc/MangaLineExtraction_PyTorch/releases)** section of this repo. Alternatively, you may use this link:
@@ -26,17 +18,12 @@ Please refer to the **[release](https://github.com/ljsabc/MangaLineExtraction_Py
 
   +  Python3
   +  PyTorch (tested on version 1.9)
-  +  Python-opencv
 
 ### How the model is prepared
 
 The PyTorch weights are exactly the same as the theano(!) model. I make some efforts to convert the original weights to the new model and ensure the overall error is less than 1e-3 over the image range from 0-255. 
 
 Moreover, the functional PyTorch interface allows easier fine-tuning of this model. You can also take the whole model as a sub-module for your own work (e.g., use the on-the-fly extraction of lines as a structural constraint).
-
-### About model training
-
-I really don't want to admit it, but the legacy code looks like some artworks by a two-years old. I will try my best to recover the code to py3 and share the screentone dataset. This won't take long, so please stay tuned. 
 
 ### Go beyond manga
 
